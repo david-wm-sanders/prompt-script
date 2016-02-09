@@ -1,0 +1,113 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[cm]{fullpage}
+\usepackage[usenames,svgnames]{xcolor}
+\usepackage{enumitem}
+\setlist[itemize]{format=\textbf, leftmargin=2.5cm}
+
+\title{\underline{A Pantomime} \\ \small Prompt Script: Hero X}
+\author{David Sanders}
+
+% -- Define environments and commands --
+% Define scenetitle and note commands
+\newcommand{\scenetitle}[1]{{\Large{\textsc{#1}}}}
+\newcommand{\note}[1]{\textit{#1}}
+% Define scene flow environment
+\newenvironment{sceneflow}{\begin{enumerate}[label=\roman*., leftmargin=0em]}{\end{enumerate}}
+% Define song command
+\newcounter{song}
+\newcommand{\song}[0]{\refstepcounter{song}SONG~\thesong:}
+% Define prompt commands: \voc - sing/speak, \act - act!
+\newcommand{\voc}[1]{{\large{\color{Green}#1}}}
+\newcommand{\act}[1]{{\large{\color{Red}\textit{*#1*}}}}
+
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+% Act 1
+% \input{./1-0.tex}
+\item [1-0:] \scenetitle{Prologue}
+\begin{sceneflow}
+\item \note{The Sorcerer declares his villainous intent.}
+\item \note{The Sorcerer heads off to devise dastardly deeds.}
+\end{sceneflow}
+% \input{./1-1.tex}
+\item [1-1:] \scenetitle{Location A}
+\begin{sceneflow}
+\item \note{The Heroes enter.}
+\begin{itemize}
+\item [A] X is missing!
+\item [\song] \textbf{Where is X?} \\
+It seems to be fate \\
+That on this date \\
+Though he is great \\
+X is late \\
+Has anybody... \\
+Seen our mate?
+\end{itemize}
+\item \note{X appears towards the back of the stage, looking dishevelled.}
+\begin{itemize}
+\item [Z] How much did you drink last night?!
+\end{itemize}
+\end{sceneflow}
+% \input{./1-2.tex}
+\item [1-2:] \scenetitle{Location B}
+\begin{sceneflow}
+\item \note{Something happens.}
+\item \note{Heroes X and Y enter.}
+\begin{itemize}
+\item [\song] \textbf{X\&Y's Duet} \\
+\voc{
+X Line 1 \\
+X Line 2 \\
+X Line 3 \\
+X Line 4 }
+
+\medskip
+Y Line 1 \\
+Y Line 2 \\
+Y Line 3 \\
+Y Line 4
+
+\medskip
+\voc{
+X\&Y Line 1 \\
+X\&Y Line 2 }
+\item [Y] ... bla bla blah.
+\item [X] \voc{Well, bla lah dah blah var zah maa.}
+\item [Z] ...
+\item [A] ...
+\item [Y] ... woffle poffle toffle!
+\item [X] \voc{Wha boo ya Z - gada nada fada zada - or zoor loor moor door!}
+\item [X\&Y] \act{Guffaw}
+\item [Y] ... Zoop wobity blobity!
+\item [X] \voc{I'm sorry but I didn't understand any of that!}
+\end{itemize}
+\item \note{The Heroes take a reality check and suddenly realise the Sorcerer is amongst them.}
+\begin{itemize}
+\item [HEROES] \act{Look towards the Sorcerer}
+\item [Y] Wooooah! Where the hell did he come from?!
+\item [Sorcerer] ... soon you will all bow to me!
+\item [X] \voc{That's what you think! I, Character X, bow to no one!}
+\item [A] ...
+\item [Z] ...
+\item [Sorcerer] You peasants! BE SILENT!
+\item [HEROES] \act{Struck dumb - draw swords and slap thighs}
+\item [Sorcerer] What? Are you trying to scream for your mummies? MWHAHAHA!
+\item [HEROES] \act{Prepare to charge}
+\item [Sorcerer] DISARMUS!
+\item [HEROES] \act{Drop swords, charge with fists brandished}
+\item [Sorcerer] GET STONED!
+\item [HEROES] \act{Freeze}
+\item [Sorcerer] ...
+\end{itemize}
+\item \note{B emerges from hiding and rushes off to find help or a decent writer.}
+\end{sceneflow}
+
+% Act 2
+% \input{./2-1.tex}
+% \input{./2-2.tex}
+\end{enumerate}
+
+\end{document}
